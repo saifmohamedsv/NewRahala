@@ -1,42 +1,45 @@
-import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import React from "react"
+import styled from "styled-components"
+import { BiMenu } from "react-icons/bi"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Nav = styled.nav`
+  height: 80px;
+  background: red;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  position: relative;
+  z-index: 100;
+`
+const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+`
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Bars = styled(BiMenu)`
+  display: none;
+  color: #fff;
+  top: 0;
+  right: 0;
 
-Header.defaultProps = {
-  siteTitle: ``,
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+  }
+`
+
+const Header = ({ siteTitle }) => {
+  return (
+    <Nav>
+      <Bars />
+      <NavLink to="/"> {siteTitle} </NavLink>
+    </Nav>
+  )
 }
 
 export default Header
