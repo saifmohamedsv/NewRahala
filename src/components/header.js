@@ -12,7 +12,6 @@ const Nav = styled.nav`
   z-index: 100;
 `
 const NavLink = styled(Link)`
-  width:100%;
   color: #fff;
   display: flex;
   align-items: center;
