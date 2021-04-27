@@ -32,6 +32,11 @@ const NavMLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: 0.3s !important;
+  &:hover {
+    transform: translateY(-10px);
+    font-size: 1.8rem;
+  }
 `
 const Bars = styled(BiMenu)`
   display: none;
@@ -50,7 +55,6 @@ const Bars = styled(BiMenu)`
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -48px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -64,6 +68,8 @@ const NavBtn = styled.div`
   }
 `
 const Button = styled(Link)`
+  letter-spacing: 0.5px;
+  cursor: pointer;
   background: ${({ primary }) => (primary ? "#4e479e" : "#fff")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "1.6rem 4rem" : "1rem 3.2rem")};
@@ -78,8 +84,8 @@ const Button = styled(Link)`
   &:hover {
     background: ${({ primary }) => (primary ? "#fff" : "#4e479e")};
     color: #4e479e;
-    transform: translateY(-2px);
-    transform: translateX(4px);
+    transform: translateY(-10px);
+    letter-spacing: 1.5px;
   }
 `
 //===================== header content ====================
@@ -96,7 +102,9 @@ const Header = ({ siteTitle }) => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button>Book a flight</Button>
+        <Button primary="true" round="true">
+          Book a Flight
+        </Button>
       </NavBtn>
     </Nav>
   )
