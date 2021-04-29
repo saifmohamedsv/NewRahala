@@ -2,7 +2,7 @@ import * as React from "react"
 import Hero from "../components/Hero"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Trips from "../components/styles/Trips"
+import Trips from "../components/Trips"
 
 const IndexPage = () => (
   <Layout>

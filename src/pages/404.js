@@ -1,15 +1,15 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../components/styles/404.css"
 import styled from "styled-components"
-import HeroVid from "../Assets/ancient1.png"
+import error from "../Assets/ancient1.png"
+import "../components/styles/404.css"
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
     <HeroContainer>
       <HeroBG>
-        <VideoBG src={HeroVid} alt="BigCo Inc. logo" />
+        <VideoBG src={error} />
       </HeroBG>
 
       <HeroContent>
