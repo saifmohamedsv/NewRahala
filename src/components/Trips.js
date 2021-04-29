@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { tripsImg } from "../../Assets/ancient.jpg"
 const Trips = () => {
   return (
     <ProductsContainer id="trips">
