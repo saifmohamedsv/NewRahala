@@ -79,14 +79,12 @@ const Header = ({ siteTitle }) => {
       <Bars />
       <NavMenu>
         {menuData.map(item => (
-          <NavMLink to={item.link} key={indexedDB}>
-            {item.title}
-          </NavMLink>
+          <NavMLink to={item.link}>{item.title}</NavMLink>
         ))}
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true">
-          Book a Flight
+        <Button primary="true" round="true" to="/trips">
+          Book a Trip
         </Button>
       </NavBtn>
     </Nav>

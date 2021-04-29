@@ -20,7 +20,7 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>Infinite Destinations</HeroH1>
           <HeroP>Wherever you want</HeroP>
-          <Button primary="true" round="true">
+          <Button primary="true" round="true" big="true" to="#trips">
             Explore
           </Button>
         </HeroItems>
@@ -41,6 +41,22 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
 `
 
 const HeroBG = styled.div`
@@ -59,7 +75,6 @@ const VideoBG = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  
 `
 
 const HeroContent = styled.div`
@@ -83,14 +98,16 @@ const HeroItems = styled.div`
 `
 
 const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(1.6rem, 6vw, 4rem);
   margin-bottom: 1rem;
   letter-spacing: 3px;
   padding: 0 1rem;
+  font-weight: 600;
 `
 
 const HeroP = styled.p`
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.4rem, 5vw, 2.4rem);
   letter-spacing: 3px;
   margin-bottom: 1rem;
+  font-weight: 300;
 `
