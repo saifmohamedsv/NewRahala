@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
-import HeroVid from "../Assets/Videos/RahalaVid.mp4"
+// import HeroVid from "../Assets/images/camel.jpg"
+import HeroVid2 from "../Assets/Videos/video.mp4"
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroBG>
         <VideoBG
-          src={HeroVid}
+          src={HeroVid2}
           type="video/mp4"
           autoPlay
           loop
@@ -52,10 +53,10 @@ const HeroContainer = styled.div`
     z-index: 2;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.4) 100%
       ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
   }
 `
 

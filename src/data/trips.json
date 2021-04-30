@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../Assets/images/cairo.jpg",
+    "alt": "cairo governorate",
+    "name": "Cairo",
+    "button": "View Destination"
+  },
+  {
+    "img": "../Assets/images/alexandria.jpg",
+    "alt": "Alexandria governorate",
+    "name": "Alexandria",
+    "button": "View Destination"
+  },
+  {
+    "img": "../Assets/images/dahab.jpg",
+    "alt": "Dahab governorate",
+    "name": "Dahab",
+    "button": "View Destination"
+  },
+  {
+    "img": "../Assets/images/sharm.jpg",
+    "alt": "Sharm el shiekh governorate",
+    "name": "Sharm el shiekh",
+    "button": "View Destination"
+  }
+]

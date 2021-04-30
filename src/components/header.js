@@ -5,19 +5,20 @@ import { BiMenu } from "react-icons/bi"
 import { menuData } from "../data/menuData"
 import { Button } from "./Button"
 const Nav = styled.nav`
-  height: 80px;
+  position: relative;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem calc((100vw - 1300px) / 2);
-  position: relative;
+  padding: 1rem calc((100vw - 1300px) / 2.5);
+  height: 80px;
   z-index: 100;
 `
 const NavLink = styled(Link)`
   letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #fff;
+  font-weight: 700;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -31,8 +32,9 @@ const NavMLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
   height: 100%;
   cursor: pointer;
   transition: 0.3s !important;
@@ -55,9 +57,10 @@ const Bars = styled(BiMenu)`
   }
 `
 const NavMenu = styled.div`
+  height: 100%;
   display: flex;
   align-items: center;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
   @media screen and (max-width: 768px) {
     display: none;
   }
