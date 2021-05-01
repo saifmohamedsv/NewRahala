@@ -1,6 +1,36 @@
 import React from "react"
 import styled from "styled-components"
-const Trips = () => {
+import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
+
+export default function Trips() {
+  const { data } = useStaticQuery(graphql`
+    query HeaderQuery {
+      allTripsJson {
+        edges {
+          node {
+            button
+            alt
+            name
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  function getTrips(data) {
+    const tripsArray = []
+
+    data.allTripsJson.edges.forEach((item, index) => {
+      tripsArray.push(<div></div>)
+    })
+  }
   return (
     <ProductsContainer id="trips">
       <ProductsHeading>Heading</ProductsHeading>
@@ -8,8 +38,6 @@ const Trips = () => {
     </ProductsContainer>
   )
 }
-
-export default Trips
 
 const ProductsContainer = styled.div`
   min-height: 100vh;

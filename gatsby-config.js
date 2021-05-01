@@ -13,14 +13,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        path: `${__dirname}/src/Assets/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `Videos`,
-        path: `${__dirname}/src/assets/Videos`,
+        path: `${__dirname}/src/Assets/Videos`,
       },
     },
     `gatsby-transformer-sharp`,

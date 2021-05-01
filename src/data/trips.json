@@ -1,25 +1,25 @@
 [
   {
-    "img": "../Assets/images/cairo.jpg",
-    "alt": "cairo governorate",
+    "img": "../Assets/images/img-1.jpg",
+    "alt": "Cairo, Egypt",
     "name": "Cairo",
     "button": "View Destination"
   },
   {
-    "img": "../Assets/images/alexandria.jpg",
-    "alt": "Alexandria governorate",
+    "img": "../Assets/images/img-2.jpg",
+    "alt": "Alexandria, Egypt fresh air, sea, diving",
     "name": "Alexandria",
     "button": "View Destination"
   },
   {
-    "img": "../Assets/images/dahab.jpg",
-    "alt": "Dahab governorate",
+    "img": "../Assets/images/img-3.jpg",
+    "alt": "Dahab, Egypt safari ",
     "name": "Dahab",
     "button": "View Destination"
   },
   {
-    "img": "../Assets/images/sharm.jpg",
-    "alt": "Sharm el shiekh governorate",
+    "img": "../Assets/images/img-4.jpg",
+    "alt": "Sharm el shiekh, safari, snorkling, beach",
     "name": "Sharm el shiekh",
     "button": "View Destination"
   }
